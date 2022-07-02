@@ -1,0 +1,199 @@
+/* Fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Yellowtail&display=swap');
+
+/* Common */
+:root {
+    --main-color: #274C5B;
+    --button-background-hover: #316276;
+    --yellow-color: #EFD372;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Styles */
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+main {
+    padding-top: 154px;
+}
+
+.intro-container {
+    position: relative;
+    background-image: url('../assets/png/background-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 380px;
+    padding: 220px 30px;
+}
+
+.intro-slogan {
+    padding: 10px 0;
+}
+
+.intro-content {
+    max-width: 500px;
+}
+
+.section-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 120%;
+    letter-spacing: 0.36px;
+    color: var(--main-color);
+    margin: 14px 0;
+}
+
+/* Style for the headings of the subsections (About, Products, etc. - everything besides Intro */
+.subsection-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 130%;
+    letter-spacing: 0.36px;
+    color: var(--main-color);
+}
+/* Style for the titles of the subsections (About, Products, etc. - and Intro too */
+.curly-text {
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #7EB693;
+    line-height: 180%;
+}
+
+/* Button styles */
+
+.button-container {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 24px 9px;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 160%;
+    background-color: var(--main-color);
+    border-radius: 16px;
+    transition: background-color .5s ease 0s;
+}
+
+.button-yellow {
+    background-color: var(--yellow-color);
+}
+
+.button-darkgreen {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.button-text {
+    padding: 0 24px;
+}
+
+.button-img-container {
+    width: 38px;
+    height: 34px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color .5s ease 0s;
+}
+
+.button-darkgreen .button-img-container {
+    background-color: #447e95;
+}
+
+.button-yellow:hover {
+    background-color: var(--button-background-hover);
+    color: var(--yellow-color);
+}
+.button-yellow:hover .button-img-container {
+    background-color: var(--yellow-color);
+}
+
+.button-darkgreen:hover {
+    background-color: var(--yellow-color);
+}
+
+/* Divider style */
+.divider {
+    background-color: #B8B8B8;
+    height: 2px;
+    width: 100%;
+    display: block;
+    margin-top: 11px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 1050px) {
+    main {
+        padding-top: 92px;
+    }
+    .intro-container {
+        padding: 120px 30px;
+    }
+    .section-heading {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .intro-container {
+        padding: 90px 10px 30px;
+    }
+
+    .button-container {
+        padding: 12px 6px;
+        font-size: 14px;
+    }
+
+    .button-text {
+        padding: 0 12px;
+    }
+
+    .curly-text {
+        font-size: 20px;
+        letter-spacing: 0.36px;
+    }
+
+    .subsection-heading {
+        font-size: 35px;
+    }
+
+    .section-heading {
+        font-size: 30px;
+        margin: 0 0 14px 0;
+    }
+ }
+
+ @media (max-width: 480px) {
+    .subsection-heading {
+        font-size: 28px;
+    }
+}
