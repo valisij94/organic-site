@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./styles/news.css">
     <link rel="stylesheet" href="./styles/subscribe.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="./styles/animation.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./js/burger.js" defer></script>
@@ -57,9 +59,9 @@
     <main>
         <section class="intro-container">
             <div class="intro-content section-heading">
-                <p class="intro-slogan curly-text"><a id="home"></a>Made with Nature</p>
-                <p class="intro-content">Welcome to the world of nature and organic</p>
-                <div class="button-container button-yellow">
+                <p class="intro-slogan curly-text animated amf"><a id="home"></a>Made with Nature</p>
+                <p class="intro-content animated amf-1">Welcome to the world of nature and organic</p>
+                <div class="button-container button-yellow animated fade">
                     <p class="button-text">Explore now</p>
                     <div class="button-img-container">
                         <img alt="Arrow" src="./assets/svg/arrow.svg" />
@@ -69,12 +71,12 @@
         </section>
 
         <section class="container offers-container">
-            <div class="offer-container offer-container-1">
-                <p class="offer-header curly-text">Natural!!!</p>
+            <div class="offer-container offer-container-1 animated fade">
+                <p class="offer-header curly-text animated amf">Natural!!!</p>
                 <p class="offer-content">Get Garden Fresh Fruits</p>
             </div>
-            <div class="offer-container offer-container-2">
-                <p class="offer-header curly-text">Offer!!</p>
+            <div class="offer-container offer-container-2 animated fade">
+                <p class="offer-header curly-text animated amf">Offer!!</p>
                 <p class="offer-content">Get 10% off on Vegetables</p>
             </div>
         </section>
@@ -84,10 +86,10 @@
                 <img src="./assets/png/IMAGE.png" alt="fruits image"/>
             </div>
             <div class="about-content">
-                <p class="curly-text"><a id="about_us"></a>About Us</p>
-                <p class="subsection-heading">We Believe In Organic Foods For Strong Health</p>
-                <p class="about-content-text">Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition.</p>
-                <div class="about-content-card">
+                <p class="curly-text animated amf"><a id="about_us"></a>About Us</p>
+                <p class="subsection-heading animated amf-1">We Believe In Organic Foods For Strong Health</p>
+                <p class="about-content-text animated fade">Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition.</p>
+                <div class="about-content-card animated mr2l">
                     <div class="about-card-img">
                         <img src="./assets/png/card_img1.png" alt="plate img" />
                     </div>
@@ -96,7 +98,7 @@
                         <p class="about-card-content">The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.</p>
                     </div>
                 </div>
-                <div class="about-content-card">
+                <div class="about-content-card animated mr2l">
                     <div class="about-card-img">
                         <img src="./assets/png/card_img2.png" alt="plate img" />
                     </div>
@@ -115,10 +117,10 @@
         </section>
 
         <section class="products-container container">
-            <p class="curly-text"><a id="shop"></a>Organic</p>
-            <p class="subsection-heading">Our products</p>
+            <p class="curly-text animated amf"><a id="shop"></a>Organic</p>
+            <p class="subsection-heading animated amf-1">Our products</p>
             <div class="products-cards-container">
-                <div class="product-card">
+                <div data-ordernum="1" class="product-card animated scale">
                     <p class="product-card-categoty">Vegetable</p>
                     <img src="./assets/jpg/broccoli.jpg" alt="broccoli image" class="product-card-image">
                     <p class="product-card-name">Calabrese Broccoli</p>
@@ -135,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card animated scale">
                     <p class="product-card-categoty">Vegetable</p>
                     <img src="./assets/jpg/corn.jpg" alt="corn image" class="product-card-image">
                     <p class="product-card-name">Fresh Corn</p>
@@ -152,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card animated scale">
                     <p class="product-card-categoty">Mil</p>
                     <img src="./assets/jpg/pistachos.jpg" alt="pistachos image" class="product-card-image">
                     <p class="product-card-name">Dries Pistachos</p>
@@ -169,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card animated scale">
                     <p class="product-card-categoty">Vegetable</p>
                     <img src="./assets/jpg/tomatoes.jpg" alt="tomato image" class="product-card-image">
                     <p class="product-card-name">Vegan Red Tomato</p>
@@ -186,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card animated scale">
                     <p class="product-card-categoty">Fru</p>
                     <img src="./assets/jpg/almonds.jpg" alt="almonds image" class="product-card-image">
                     <p class="product-card-name">Organic Almonds</p>
@@ -203,7 +205,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card animated scale">
                     <p class="product-card-categoty">Mil</p>
                     <img src="./assets/jpg/hazelnuts.jpg" alt="broccoli image" class="product-card-image">
                     <p class="product-card-name">Brown Hazelnut</p>
@@ -224,8 +226,8 @@
         </section>
 
         <section class="feedbacks-container">
-            <p class="curly-text">Testimonial</p>
-            <p class="subsection-heading">What Our Customer Saying</p>
+            <p class="curly-text animated amf">Testimonial</p>
+            <p class="subsection-heading animated amf-1">What Our Customer Saying</p>
             <div class="feedbacks-slides-container">
                 <div class="feedback-slide">
                     <img src="./assets/jpg/sara_taylor.jpg" alt="sara taylor photo" class="feedback-slide-img">
@@ -282,8 +284,8 @@
             <div class="offers2-container container">
                 <div class="offers2-header-container">
                     <div class="offers2-header">
-                        <p class="curly-text">Offer Products</p>
-                        <p class="subsection-heading">We Offer Organic For You</p>
+                        <p class="curly-text animated amf">Offer Products</p>
+                        <p class="subsection-heading animated amf-1">We Offer Organic For You</p>
                     </div>
                     <div class="button-container button-yellow">
                         <p class="button-text">View All Products</p>
@@ -293,7 +295,7 @@
                     </div>
                 </div>
                 <div class="products-cards-container">
-                    <div class="product-card">
+                    <div class="product-card animated scale">
                         <p class="product-card-categoty">Vegetable</p>
                         <img src="./assets/jpg/broccoli.jpg" alt="broccoli image" class="product-card-image">
                         <p class="product-card-name">Calabrese Broccoli</p>
@@ -310,7 +312,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card animated scale">
                         <p class="product-card-categoty">Vegetable</p>
                         <img src="./assets/jpg/corn.jpg" alt="corn image" class="product-card-image">
                         <p class="product-card-name">Fresh Corn</p>
@@ -327,7 +329,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card animated scale">
                         <p class="product-card-categoty">Mil</p>
                         <img src="./assets/jpg/pistachos.jpg" alt="pistachos image" class="product-card-image">
                         <p class="product-card-name">Dries Pistachos</p>
@@ -350,14 +352,14 @@
 
         <section class="farms">
             <div class="farm-card">
-                <p class="curly-text">Eco Friendly</p>
-                <p class="subsection-heading">From Our Farm To Your Home</p>
+                <p class="curly-text animated amf">Eco Friendly</p>
+                <p class="subsection-heading animated amf-1">From Our Farm To Your Home</p>
                 <h4 class="farms-subsection-header">Choose Your Products</h4>
-                <p class="farms-subsection-text">In our listing, we have several collections of organic products. This is the place where you need to choose the product you want.</p>
+                <p class="farms-subsection-text animated mr2l">In our listing, we have several collections of organic products. This is the place where you need to choose the product you want.</p>
                 <h4 class="farms-subsection-header">Farmers Will Produce It</h4>
-                <p class="farms-subsection-text">The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.</p>
+                <p class="farms-subsection-text animated mr2l">The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.</p>
                 <h4 class="farms-subsection-header">We Can Delivery Too</h4>
-                <p class="farms-subsection-text">If you are not comfortable going to the nearby market place we also will deliver your product to your doorstep.</p>
+                <p class="farms-subsection-text animated mr2l">If you are not comfortable going to the nearby market place we also will deliver your product to your doorstep.</p>
             </div>
         </section>
 
@@ -385,8 +387,8 @@
         <section class="news-container container">
             <div class="offers2-header-container news-header-container">
                 <div class="offers2-header news-header">
-                    <p class="curly-text"><a id="pages"></a>News</p>
-                    <p class="subsection-heading">Discover The Recent Content About Organic Products</p>
+                    <p class="curly-text aimated amf"><a id="pages"></a>News</p>
+                    <p class="subsection-heading animated amf-1">Discover The Recent Content About Organic Products</p>
                 </div>
                 <div class="button-container button-white">
                     <p class="button-text">More News</p>
@@ -396,7 +398,7 @@
                 </div>
             </div>
             <div class="news-cards-container">
-                <div class="news-card-container">
+                <div class="news-card-container animated fade">
                     <img src="./assets/jpg/news1.jpg" alt="vegetables" class="news-img">
                     <div class="news-card">
                         <div class="news-card-credentials">
@@ -413,7 +415,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-card-container">
+                <div class="news-card-container animated fade">
                     <img src="./assets/jpg/news2.jpg" alt="greens" class="news-img">
                     <div class="news-card">
                         <div class="news-card-credentials">
@@ -433,7 +435,7 @@
             </div>
         </section>
 
-        <section class="subscribe-container container">
+        <section class="subscribe-container container animated mr2l">
             <div class="subscribe-email-container">
                 <p class="subscribe-email-hint">Subscribe Our Newsletter</p>
                 <input type="text" class="subscribe-email-input" placeholder="Enter your email">
@@ -447,7 +449,7 @@
         </section>
     </main>
 
-    <footer class="footer-container container">
+    <footer class="footer-container container animated fade">
         <div class="footer-contacts">
             <a id="contacts"></a>
             <p class="footer-header">Contact Us</p>
@@ -499,5 +501,6 @@
         </div>
     </footer>
 
+    <script src="./js/animation.js"></script>
 </body>
 </html>
